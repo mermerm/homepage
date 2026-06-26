@@ -1,19 +1,27 @@
 {
   "version": 2,
   "builds": [
-    { "src": "api/chat.js", "use": "@vercel/node" },
-    { "src": "api/lead.js", "use": "@vercel/node" },
-    { "src": "index.html",  "use": "@vercel/static" },
-    { "src": "chatbot.js",  "use": "@vercel/static" },
-    { "src": "support.js",  "use": "@vercel/static" },
-    { "src": "uploads/**",  "use": "@vercel/static" }
+    {
+      "src": "api/chat.js",
+      "use": "@vercel/node",
+      "config": { "includeFiles": ["lib/**", "uploads/**"] }
+    },
+    {
+      "src": "api/lead.js",
+      "use": "@vercel/node",
+      "config": { "includeFiles": ["lib/**"] }
+    },
+    { "src": "index.html", "use": "@vercel/static" },
+    { "src": "chatbot.js", "use": "@vercel/static" },
+    { "src": "support.js", "use": "@vercel/static" },
+    { "src": "uploads/**", "use": "@vercel/static" }
   ],
   "routes": [
-    { "src": "/api/chat",         "dest": "/api/chat.js" },
-    { "src": "/api/lead",         "dest": "/api/lead.js" },
-    { "src": "/uploads/(.*)",     "dest": "/uploads/$1" },
-    { "src": "/chatbot\\.js",     "dest": "/chatbot.js" },
-    { "src": "/support\\.js",     "dest": "/support.js" },
-    { "src": "/(.*)",             "dest": "/index.html" }
+    { "src": "/api/chat",     "dest": "/api/chat.js" },
+    { "src": "/api/lead",     "dest": "/api/lead.js" },
+    { "src": "/uploads/(.*)", "dest": "/uploads/$1" },
+    { "src": "/chatbot\\.js", "dest": "/chatbot.js" },
+    { "src": "/support\\.js", "dest": "/support.js" },
+    { "src": "/(.*)",         "dest": "/index.html" }
   ]
 }
