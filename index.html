@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;1,500;1,700&display=swap" rel="stylesheet">
+<style>
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:#13213B;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;font-family:Pretendard,-apple-system,BlinkMacSystemFont,sans-serif}
+  ::selection{background:#C8963E;color:#13213B}
+  a{text-decoration:none;color:inherit}
+  @media (max-width:760px){ .nav-links{display:none !important} }
+</style>
+</helmet>
+
+<div style="background:#F8F6F1;color:#1B2D4F;overflow:hidden">
+
+  <!-- ===================== NAV ===================== -->
+  <nav style="position:sticky;top:0;z-index:50;background:#13213B;border-bottom:1px solid rgba(248,246,241,.09)">
+    <div style="max-width:1280px;margin:0 auto;padding:0 clamp(24px,5vw,72px);height:74px;display:flex;align-items:center;justify-content:space-between">
+      <a href="#top" style="display:flex;align-items:center">
+        <img src="./uploads/logo_white.png" alt="merm VENTURES" style="height:80px;width:auto;display:block">
+      </a>
+      <div class="nav-links" style="display:flex;align-items:center;gap:38px">
+        <a href="#services" style="font-size:14px;color:rgba(248,246,241,.78)" style-hover="color:#C8963E">서비스</a>
+        <a href="#work" style="font-size:14px;color:rgba(248,246,241,.78)" style-hover="color:#C8963E">성공사례</a>
+        <a href="#pricing" style="font-size:14px;color:rgba(248,246,241,.78)" style-hover="color:#C8963E">요금제</a>
+        <a href="#contact" style="display:inline-block;background:#C8963E;color:#13213B;font-weight:700;font-size:13px;letter-spacing:.02em;padding:12px 22px" style-hover="background:#b3842f">무료 상담</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===================== MAIN IMAGE ===================== -->
+  <div style="width:100%;overflow:hidden;line-height:0">
+    <img src="./uploads/main image.png" alt="merm VENTURES 메인 이미지" style="width:100%;display:block;object-fit:cover">
+  </div>
+
+  <!-- ===================== HERO ===================== -->
+  <header id="top" data-screen-label="Hero" style="position:relative;background:#13213B;color:#F8F6F1;scroll-margin-top:74px">
+    <div aria-hidden="true" style="position:absolute;right:-4vw;bottom:-12vh;font-weight:800;font-size:clamp(220px,42vw,620px);line-height:.7;color:rgba(248,246,241,.035);letter-spacing:-.04em;pointer-events:none;user-select:none">merm</div>
+    <div style="position:relative;max-width:1280px;margin:0 auto;padding:clamp(90px,15vh,170px) clamp(24px,5vw,72px) clamp(80px,12vh,140px)">
+      <div style="width:56px;height:3px;background:#C8963E;margin-bottom:34px"></div>
+      <p style="margin:0 0 30px;font-size:13px;font-weight:600;letter-spacing:.26em;color:#C8963E">BRANDING · DESIGN PARTNER</p>
+      <h1 style="margin:0;font-weight:800;font-size:clamp(46px,8vw,108px);line-height:1;letter-spacing:-.03em;color:#F8F6F1">브랜드를<br>설계합니다</h1>
+      <p style="margin:30px 0 0;font-family:'Playfair Display',serif;font-style:italic;font-weight:500;font-size:clamp(24px,3.4vw,40px);color:#C8963E;letter-spacing:.01em">We Design Trust.</p>
+      <p style="margin:38px 0 0;max-width:560px;font-weight:300;font-size:clamp(16px,1.5vw,19px);line-height:1.75;color:rgba(248,246,241,.74)">성장 단계 중소기업을 위한 전략적 브랜딩·디자인 파트너. 대기업 수준의 전문성을, 체감할 수 있는 방식으로 설계합니다.</p>
+      <div style="display:flex;flex-wrap:wrap;gap:14px;margin-top:46px">
+        <a href="#contact" style="display:inline-block;background:#C8963E;color:#13213B;font-weight:700;font-size:15px;letter-spacing:.01em;padding:18px 36px" style-hover="background:#b3842f">무료 브랜드 진단 신청</a>
+        <a href="#pricing" style="display:inline-block;background:transparent;border:1px solid rgba(248,246,241,.38);color:#F8F6F1;font-weight:600;font-size:15px;letter-spacing:.01em;padding:18px 36px" style-hover="border-color:#C8963E;color:#C8963E">요금제 보기</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===================== STATS STRIP ===================== -->
+  <section data-screen-label="Stats" style="background:#F8F6F1;color:#1B2D4F">
+    <div style="max-width:1280px;margin:0 auto;padding:clamp(64px,9vh,110px) clamp(24px,5vw,72px)">
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1px;background:#E5E7EB;border:1px solid #E5E7EB">
+        <div style="background:#F8F6F1;padding:40px 30px">
+          <div style="font-weight:800;font-size:clamp(40px,5vw,64px);line-height:1;letter-spacing:-.02em">10<span style="color:#C8963E">년+</span></div>
+          <p style="margin:16px 0 0;font-size:14px;font-weight:500;letter-spacing:.02em;color:#6B7280">브랜드 전략 컨설팅 경력</p>
+        </div>
+        <div style="background:#F8F6F1;padding:40px 30px">
+          <div style="font-weight:800;font-size:clamp(40px,5vw,64px);line-height:1;letter-spacing:-.02em">200<span style="color:#C8963E">+</span></div>
+          <p style="margin:16px 0 0;font-size:14px;font-weight:500;letter-spacing:.02em;color:#6B7280">누적 브랜드 제작 프로젝트</p>
+        </div>
+        <div style="background:#F8F6F1;padding:40px 30px">
+          <div style="font-weight:800;font-size:clamp(40px,5vw,64px);line-height:1;letter-spacing:-.02em"><span style="color:#C8963E">+</span>35<span style="font-size:.55em">%</span></div>
+          <p style="margin:16px 0 0;font-size:14px;font-weight:500;letter-spacing:.02em;color:#6B7280">랜딩페이지 평균 전환율 개선</p>
+        </div>
+        <div style="background:#F8F6F1;padding:40px 30px">
+          <div style="font-weight:800;font-size:clamp(40px,5vw,64px);line-height:1;letter-spacing:-.02em;white-space:nowrap">800<span style="color:#C8963E">개사</span></div>
+          <p style="margin:16px 0 0;font-size:14px;font-weight:500;letter-spacing:.02em;color:#6B7280">2030 브랜드 성장 지원 목표</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== MANIFESTO ===================== -->
+  <section data-screen-label="Manifesto" style="background:#13213B;color:#F8F6F1">
+    <div style="max-width:1040px;margin:0 auto;padding:clamp(96px,15vh,180px) clamp(24px,5vw,72px);text-align:center">
+      <p style="margin:0 0 36px;font-size:12px;font-weight:600;letter-spacing:.3em;color:#C8963E">BRAND ESSENCE — 설계된 신뢰</p>
+      <p style="margin:0;font-weight:800;font-size:clamp(28px,4.2vw,52px);line-height:1.32;letter-spacing:-.02em;text-wrap:balance">모든 사업에는 고유한 이야기가 있습니다.<br><span style="color:#C8963E">merm벤처스</span>는 그 이야기를 브랜드로 완성합니다.</p>
+      <p style="margin:40px auto 0;max-width:600px;font-weight:300;font-size:17px;line-height:1.8;color:rgba(248,246,241,.66)">화려함보다 본질, 유행보다 지속성, 겉모습보다 의미를 우선합니다. 브랜드의 힘은 크기가 아닌 방향에서 나옵니다.</p>
+    </div>
+  </section>
+
+  <!-- ===================== SERVICES ===================== -->
+  <section id="services" data-screen-label="Services" style="background:#F8F6F1;color:#1B2D4F;scroll-margin-top:74px">
+    <div style="max-width:1280px;margin:0 auto;padding:clamp(96px,14vh,170px) clamp(24px,5vw,72px)">
+      <div style="display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:24px;margin-bottom:64px">
+        <div>
+          <div style="width:56px;height:3px;background:#C8963E;margin-bottom:26px"></div>
+          <p style="margin:0 0 14px;font-size:12px;font-weight:600;letter-spacing:.26em;color:#C8963E">OUR SERVICES</p>
+          <h2 style="margin:0;font-weight:800;font-size:clamp(32px,4.6vw,60px);line-height:1.05;letter-spacing:-.03em">핵심 서비스</h2>
+        </div>
+        <p style="margin:0;max-width:400px;font-weight:300;font-size:16px;line-height:1.75;color:#6B7280">브랜드의 뼈대를 세우는 일부터 시장에서 전환을 만드는 일까지 — 일관된 시각 언어로 연결합니다.</p>
+      </div>
+
+      <div style="border-top:1px solid #E5E7EB">
+        <a href="#contact" style="display:grid;grid-template-columns:88px 1fr;gap:clamp(16px,4vw,56px);padding:clamp(34px,4vw,52px) 0;border-bottom:1px solid #E5E7EB;align-items:start" style-hover="background:#F1EEE6">
+          <div style="font-weight:800;font-size:clamp(28px,3vw,40px);color:#C8963E;line-height:1">01</div>
+          <div style="display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1.4fr);gap:clamp(16px,4vw,56px);align-items:baseline">
+            <h3 style="margin:0;font-weight:800;font-size:clamp(22px,2.4vw,32px);letter-spacing:-.02em;line-height:1.2">브랜드 아이덴티티<br>구축</h3>
+            <p style="margin:0;font-weight:300;font-size:16px;line-height:1.75;color:#475569">로고, 컬러 시스템, 타이포그래피, 브랜드 가이드라인까지. 어떤 접점에서도 즉각 인식되는 일관된 시각 언어를 정의합니다.</p>
+          </div>
+        </a>
+        <a href="#contact" style="display:grid;grid-template-columns:88px 1fr;gap:clamp(16px,4vw,56px);padding:clamp(34px,4vw,52px) 0;border-bottom:1px solid #E5E7EB;align-items:start" style-hover="background:#F1EEE6">
+          <div style="font-weight:800;font-size:clamp(28px,3vw,40px);color:#C8963E;line-height:1">02</div>
+          <div style="display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1.4fr);gap:clamp(16px,4vw,56px);align-items:baseline">
+            <h3 style="margin:0;font-weight:800;font-size:clamp(22px,2.4vw,32px);letter-spacing:-.02em;line-height:1.2">마케팅 디자인<br>제작</h3>
+            <p style="margin:0;font-weight:300;font-size:16px;line-height:1.75;color:#475569">SNS 콘텐츠, 인쇄물, 패키지, 브로셔까지. 온·오프라인 양쪽에서 통일감 있는 시각 경험을 구현합니다.</p>
+          </div>
+        </a>
+        <a href="#contact" style="display:grid;grid-template-columns:88px 1fr;gap:clamp(16px,4vw,56px);padding:clamp(34px,4vw,52px) 0;border-bottom:1px solid #E5E7EB;align-items:start" style-hover="background:#F1EEE6">
+          <div style="font-weight:800;font-size:clamp(28px,3vw,40px);color:#C8963E;line-height:1">03</div>
+          <div style="display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1.4fr);gap:clamp(16px,4vw,56px);align-items:baseline">
+            <h3 style="margin:0;font-weight:800;font-size:clamp(22px,2.4vw,32px);letter-spacing:-.02em;line-height:1.2">웹사이트 &<br>랜딩페이지</h3>
+            <p style="margin:0;font-weight:300;font-size:16px;line-height:1.75;color:#475569">첫인상이 곧 전환율입니다. 브랜드 일관성을 유지하면서 방문자를 고객으로 전환시키는 UI/UX를 설계합니다.</p>
+          </div>
+        </a>
+        <a href="#contact" style="display:grid;grid-template-columns:88px 1fr;gap:clamp(16px,4vw,56px);padding:clamp(34px,4vw,52px) 0;border-bottom:1px solid #E5E7EB;align-items:start" style-hover="background:#F1EEE6">
+          <div style="font-weight:800;font-size:clamp(28px,3vw,40px);color:#C8963E;line-height:1">04</div>
+          <div style="display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1.4fr);gap:clamp(16px,4vw,56px);align-items:baseline">
+            <h3 style="margin:0;font-weight:800;font-size:clamp(22px,2.4vw,32px);letter-spacing:-.02em;line-height:1.2">브랜드<br>리뉴얼</h3>
+            <p style="margin:0;font-weight:300;font-size:16px;line-height:1.75;color:#475569">기존 브랜드 자산은 보존하면서 현재 시장과 고객에 맞게 진화시킵니다. 단계적 리브랜딩 전략으로 안전하게.</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== SUCCESS CASES ===================== -->
+  <section id="work" data-screen-label="Success Cases" style="background:#13213B;color:#F8F6F1;scroll-margin-top:74px">
+    <div style="max-width:1280px;margin:0 auto;padding:clamp(96px,14vh,170px) clamp(24px,5vw,72px)">
+      <div style="margin-bottom:72px">
+        <div style="width:56px;height:3px;background:#C8963E;margin-bottom:26px"></div>
+        <p style="margin:0 0 14px;font-size:12px;font-weight:600;letter-spacing:.26em;color:#C8963E">SUCCESS STORIES</p>
+        <h2 style="margin:0;font-weight:800;font-size:clamp(32px,4.6vw,60px);line-height:1.05;letter-spacing:-.03em;color:#F8F6F1">결과로 증명합니다</h2>
+      </div>
+
+      <!-- Case 1 -->
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:clamp(28px,4vw,64px);padding:clamp(40px,5vw,60px) 0;border-top:1px solid rgba(248,246,241,.12)">
+        <div>
+          <p style="margin:0 0 16px;font-size:12px;font-weight:600;letter-spacing:.18em;color:#C8963E">브랜드 아이덴티티 구축</p>
+          <h3 style="margin:0 0 16px;font-weight:800;font-size:clamp(24px,2.6vw,34px);letter-spacing:-.02em">수제 베이커리<br>"온기빵집"</h3>
+          <p style="margin:0;font-weight:300;font-size:15px;line-height:1.75;color:rgba(248,246,241,.62);max-width:340px">맛은 자신 있었지만 로고도 없이 운영하던 동네 빵집. 창업자의 철학을 담은 BI와 SNS 템플릿으로 브랜드를 세웠습니다.</p>
+        </div>
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:clamp(20px,3vw,40px);align-content:center">
+          <div>
+            <div style="font-weight:800;font-size:clamp(44px,5vw,68px);line-height:1;letter-spacing:-.03em;color:#C8963E">4,200</div>
+            <p style="margin:14px 0 0;font-size:13px;font-weight:500;color:rgba(248,246,241,.6)">인스타 팔로워 <span style="color:rgba(248,246,241,.4)">· 800명 → 4,200명</span></p>
+          </div>
+          <div>
+            <div style="font-weight:800;font-size:clamp(44px,5vw,68px);line-height:1;letter-spacing:-.03em;color:#F8F6F1">+40<span style="font-size:.5em">%</span></div>
+            <p style="margin:14px 0 0;font-size:13px;font-weight:500;color:rgba(248,246,241,.6)">온라인 예약 주문 월 매출</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Case 2 -->
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:clamp(28px,4vw,64px);padding:clamp(40px,5vw,60px) 0;border-top:1px solid rgba(248,246,241,.12)">
+        <div>
+          <p style="margin:0 0 16px;font-size:12px;font-weight:600;letter-spacing:.18em;color:#C8963E">웹사이트 & 브랜드 리뉴얼</p>
+          <h3 style="margin:0 0 16px;font-weight:800;font-size:clamp(24px,2.6vw,34px);letter-spacing:-.02em">IT 솔루션 스타트업<br>"넥스트링크"</h3>
+          <p style="margin:0;font-weight:300;font-size:15px;line-height:1.75;color:rgba(248,246,241,.62);max-width:340px">기술력은 뛰어나지만 오래된 홈페이지로 신뢰를 잃던 B2B 스타트업. 신뢰·전문성 콘셉트의 리브랜딩과 랜딩페이지 3종을 설계했습니다.</p>
+        </div>
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:clamp(20px,3vw,40px);align-content:center">
+          <div>
+            <div style="font-weight:800;font-size:clamp(44px,5vw,68px);line-height:1;letter-spacing:-.03em;color:#C8963E">41<span style="font-size:.5em">%</span></div>
+            <p style="margin:14px 0 0;font-size:13px;font-weight:500;color:rgba(248,246,241,.6)">영업 제안서 수주율 <span style="color:rgba(248,246,241,.4)">· 22% →</span></p>
+          </div>
+          <div>
+            <div style="font-weight:800;font-size:clamp(44px,5vw,68px);line-height:1;letter-spacing:-.03em;color:#F8F6F1">3:48</div>
+            <p style="margin:14px 0 0;font-size:13px;font-weight:500;color:rgba(248,246,241,.6)">평균 체류시간 <span style="color:rgba(248,246,241,.4)">· 1:12 →</span></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Case 3 -->
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:clamp(28px,4vw,64px);padding:clamp(40px,5vw,60px) 0;border-top:1px solid rgba(248,246,241,.12);border-bottom:1px solid rgba(248,246,241,.12)">
+        <div>
+          <p style="margin:0 0 16px;font-size:12px;font-weight:600;letter-spacing:.18em;color:#C8963E">패키지 & 콘텐츠 디자인</p>
+          <h3 style="margin:0 0 16px;font-weight:800;font-size:clamp(24px,2.6vw,34px);letter-spacing:-.02em">반려동물 용품 쇼핑몰<br>"퍼피박스"</h3>
+          <p style="margin:0;font-weight:300;font-size:15px;line-height:1.75;color:rgba(248,246,241,.62);max-width:340px">치열한 시장에서 차별화에 어려움을 겪던 쇼핑몰. 패키지 전면 리뉴얼과 정기 콘텐츠로 재구매율을 끌어올렸습니다.</p>
+        </div>
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:clamp(20px,3vw,40px);align-content:center">
+          <div>
+            <div style="font-weight:800;font-size:clamp(44px,5vw,68px);line-height:1;letter-spacing:-.03em;color:#C8963E">31<span style="font-size:.5em">%</span></div>
+            <p style="margin:14px 0 0;font-size:13px;font-weight:500;color:rgba(248,246,241,.6)">고객 재구매율 <span style="color:rgba(248,246,241,.4)">· 18% →</span></p>
+          </div>
+          <div>
+            <div style="font-weight:800;font-size:clamp(44px,5vw,68px);line-height:1;letter-spacing:-.03em;color:#F8F6F1">−12<span style="font-size:.5em">%</span></div>
+            <p style="margin:14px 0 0;font-size:13px;font-weight:500;color:rgba(248,246,241,.6)">제품 반품률</p>
+          </div>
+        </div>
+      </div>
+
+      <p style="margin:32px 0 0;font-size:12px;font-weight:300;color:rgba(248,246,241,.4)">* 위 사례는 실제 프로젝트를 기반으로 각색한 가상의 사례입니다.</p>
+    </div>
+  </section>
+
+  <!-- ===================== PRICING ===================== -->
+  <section id="pricing" data-screen-label="Pricing" style="background:#F8F6F1;color:#1B2D4F;scroll-margin-top:74px">
+    <div style="max-width:1280px;margin:0 auto;padding:clamp(96px,14vh,170px) clamp(24px,5vw,72px)">
+      <div style="text-align:center;max-width:680px;margin:0 auto 64px">
+        <div style="width:56px;height:3px;background:#C8963E;margin:0 auto 26px"></div>
+        <p style="margin:0 0 14px;font-size:12px;font-weight:600;letter-spacing:.26em;color:#C8963E">PRICING & PACKAGES</p>
+        <h2 style="margin:0 0 20px;font-weight:800;font-size:clamp(32px,4.6vw,60px);line-height:1.05;letter-spacing:-.03em">사업 단계에 맞춘<br>요금제</h2>
+        <p style="margin:0;font-weight:300;font-size:16px;line-height:1.75;color:#6B7280">모든 패키지는 초기 무료 상담(30분) 후 진행되며, 사업 규모와 요구사항에 따라 맞춤 견적이 가능합니다.</p>
+      </div>
+
+      <!-- Package header cards -->
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px;margin-bottom:18px">
+        <!-- Starter -->
+        <div style="background:#fff;border:1px solid #E5E7EB;padding:38px 32px">
+          <p style="margin:0 0 6px;font-size:13px;font-weight:700;letter-spacing:.14em;color:#6B7280">STARTER</p>
+          <p style="margin:0 0 26px;font-size:14px;font-weight:300;color:#6B7280">창업 초기 소상공인</p>
+          <div style="display:flex;align-items:baseline;gap:6px">
+            <span style="font-weight:800;font-size:42px;letter-spacing:-.02em">30<span style="font-size:.5em;font-weight:700">만원~</span></span>
+          </div>
+          <p style="margin:6px 0 28px;font-size:13px;color:#6B7280">월 / 계약 1개월</p>
+          <a href="#contact" style="display:block;text-align:center;background:transparent;border:1px solid #1B2D4F;color:#1B2D4F;font-weight:700;font-size:14px;padding:15px" style-hover="background:#1B2D4F;color:#F8F6F1">상담 신청</a>
+        </div>
+        <!-- Growth (highlight) -->
+        <div style="background:#13213B;color:#F8F6F1;padding:38px 32px;position:relative">
+          <span style="position:absolute;top:0;right:0;background:#C8963E;color:#13213B;font-size:11px;font-weight:700;letter-spacing:.1em;padding:7px 14px">추천</span>
+          <p style="margin:0 0 6px;font-size:13px;font-weight:700;letter-spacing:.14em;color:#C8963E">GROWTH</p>
+          <p style="margin:0 0 26px;font-size:14px;font-weight:300;color:rgba(248,246,241,.6)">성장 단계 중소기업</p>
+          <div style="display:flex;align-items:baseline;gap:6px">
+            <span style="font-weight:800;font-size:42px;letter-spacing:-.02em;color:#F8F6F1">80<span style="font-size:.5em;font-weight:700">만원~</span></span>
+          </div>
+          <p style="margin:6px 0 28px;font-size:13px;color:rgba(248,246,241,.6)">월 / 계약 3개월</p>
+          <a href="#contact" style="display:block;text-align:center;background:#C8963E;color:#13213B;font-weight:700;font-size:14px;padding:15px" style-hover="background:#b3842f">상담 신청</a>
+        </div>
+        <!-- Premium -->
+        <div style="background:#fff;border:1px solid #E5E7EB;padding:38px 32px">
+          <p style="margin:0 0 6px;font-size:13px;font-weight:700;letter-spacing:.14em;color:#6B7280">PREMIUM</p>
+          <p style="margin:0 0 26px;font-size:14px;font-weight:300;color:#6B7280">본격 브랜딩이 필요한 기업</p>
+          <div style="display:flex;align-items:baseline;gap:6px">
+            <span style="font-weight:800;font-size:42px;letter-spacing:-.02em">별도 협의</span>
+          </div>
+          <p style="margin:6px 0 28px;font-size:13px;color:#6B7280">계약 6개월~</p>
+          <a href="#contact" style="display:block;text-align:center;background:transparent;border:1px solid #1B2D4F;color:#1B2D4F;font-weight:700;font-size:14px;padding:15px" style-hover="background:#1B2D4F;color:#F8F6F1">상담 신청</a>
+        </div>
+      </div>
+
+      <!-- Comparison table -->
+      <div style="overflow-x:auto;border:1px solid #E5E7EB;background:#fff">
+        <table style="width:100%;min-width:680px;border-collapse:collapse;font-size:14px">
+          <thead>
+            <tr style="border-bottom:1px solid #E5E7EB">
+              <th style="text-align:left;padding:18px 28px;font-weight:600;color:#6B7280;letter-spacing:.02em">패키지 비교</th>
+              <th style="text-align:center;padding:18px 16px;font-weight:700;color:#1B2D4F">Starter</th>
+              <th style="text-align:center;padding:18px 16px;font-weight:700;color:#13213B;background:#F8F6F1;border-left:2px solid #C8963E;border-right:2px solid #C8963E">Growth</th>
+              <th style="text-align:center;padding:18px 16px;font-weight:700;color:#1B2D4F">Premium</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr style="border-bottom:1px solid #F1EEE6">
+              <td style="padding:16px 28px;font-weight:500">브랜드 전략 컨설팅</td>
+              <td style="text-align:center;padding:16px;color:#6B7280">기본 (1회)</td>
+              <td style="text-align:center;padding:16px;font-weight:600;background:#FBFAF6;border-left:2px solid #C8963E;border-right:2px solid #C8963E">월 1회</td>
+              <td style="text-align:center;padding:16px;color:#6B7280">월 2회</td>
+            </tr>
+            <tr style="border-bottom:1px solid #F1EEE6">
+              <td style="padding:16px 28px;font-weight:500">로고 디자인</td>
+              <td style="text-align:center;padding:16px;color:#C8963E;font-weight:700">✓</td>
+              <td style="text-align:center;padding:16px;color:#C8963E;font-weight:700;background:#FBFAF6;border-left:2px solid #C8963E;border-right:2px solid #C8963E">✓</td>
+              <td style="text-align:center;padding:16px;color:#C8963E;font-weight:700">✓</td>
+            </tr>
+            <tr style="border-bottom:1px solid #F1EEE6">
+              <td style="padding:16px 28px;font-weight:500">브랜드 가이드라인</td>
+              <td style="text-align:center;padding:16px;color:#6B7280">기본형</td>
+              <td style="text-align:center;padding:16px;font-weight:600;background:#FBFAF6;border-left:2px solid #C8963E;border-right:2px solid #C8963E">표준형</td>
+              <td style="text-align:center;padding:16px;color:#6B7280">프리미엄형</td>
+            </tr>
+            <tr style="border-bottom:1px solid #F1EEE6">
+              <td style="padding:16px 28px;font-weight:500">SNS 콘텐츠 템플릿</td>
+              <td style="text-align:center;padding:16px;color:#6B7280">5종</td>
+              <td style="text-align:center;padding:16px;font-weight:600;background:#FBFAF6;border-left:2px solid #C8963E;border-right:2px solid #C8963E">10종</td>
+              <td style="text-align:center;padding:16px;color:#6B7280">무제한</td>
+            </tr>
+            <tr style="border-bottom:1px solid #F1EEE6">
+              <td style="padding:16px 28px;font-weight:500">랜딩페이지 디자인</td>
+              <td style="text-align:center;padding:16px;color:#C9CCD2">—</td>
+              <td style="text-align:center;padding:16px;font-weight:600;background:#FBFAF6;border-left:2px solid #C8963E;border-right:2px solid #C8963E">1개</td>
+              <td style="text-align:center;padding:16px;color:#6B7280">3개</td>
+            </tr>
+            <tr style="border-bottom:1px solid #F1EEE6">
+              <td style="padding:16px 28px;font-weight:500">수정 횟수</td>
+              <td style="text-align:center;padding:16px;color:#6B7280">2회</td>
+              <td style="text-align:center;padding:16px;font-weight:600;background:#FBFAF6;border-left:2px solid #C8963E;border-right:2px solid #C8963E">5회</td>
+              <td style="text-align:center;padding:16px;color:#6B7280">무제한</td>
+            </tr>
+            <tr style="border-bottom:1px solid #F1EEE6">
+              <td style="padding:16px 28px;font-weight:500">전담 담당자 배정</td>
+              <td style="text-align:center;padding:16px;color:#C9CCD2">—</td>
+              <td style="text-align:center;padding:16px;color:#C8963E;font-weight:700;background:#FBFAF6;border-left:2px solid #C8963E;border-right:2px solid #C8963E">✓</td>
+              <td style="text-align:center;padding:16px;color:#C8963E;font-weight:700">✓</td>
+            </tr>
+            <tr>
+              <td style="padding:16px 28px;font-weight:500">월간 성과 리포트</td>
+              <td style="text-align:center;padding:16px;color:#C9CCD2">—</td>
+              <td style="text-align:center;padding:16px;color:#C8963E;font-weight:700;background:#FBFAF6;border-left:2px solid #C8963E;border-right:2px solid #C8963E">✓</td>
+              <td style="text-align:center;padding:16px;color:#C8963E;font-weight:700">✓</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- single services + discount -->
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px;margin-top:18px">
+        <div style="background:#fff;border:1px solid #E5E7EB;padding:30px 32px">
+          <p style="margin:0 0 20px;font-size:12px;font-weight:700;letter-spacing:.14em;color:#6B7280">단건 서비스</p>
+          <div style="display:flex;justify-content:space-between;padding:9px 0;border-bottom:1px solid #F1EEE6;font-size:14px"><span>로고 디자인</span><span style="font-weight:600">50만원~</span></div>
+          <div style="display:flex;justify-content:space-between;padding:9px 0;border-bottom:1px solid #F1EEE6;font-size:14px"><span>명함 디자인</span><span style="font-weight:600">10만원~</span></div>
+          <div style="display:flex;justify-content:space-between;padding:9px 0;border-bottom:1px solid #F1EEE6;font-size:14px"><span>SNS 콘텐츠 (10장)</span><span style="font-weight:600">30만원~</span></div>
+          <div style="display:flex;justify-content:space-between;padding:9px 0;border-bottom:1px solid #F1EEE6;font-size:14px"><span>랜딩페이지 디자인</span><span style="font-weight:600">150만원~</span></div>
+          <div style="display:flex;justify-content:space-between;padding:9px 0;font-size:14px"><span>브랜드 가이드라인 제작</span><span style="font-weight:600">200만원~</span></div>
+        </div>
+        <div style="background:#13213B;color:#F8F6F1;padding:30px 32px;display:flex;flex-direction:column;justify-content:center">
+          <p style="margin:0 0 14px;font-weight:800;font-size:clamp(22px,2.4vw,30px);line-height:1.3;letter-spacing:-.02em">소상공인 확인서 제출 시<br><span style="color:#C8963E">전 서비스 10% 할인</span></p>
+          <p style="margin:0;font-size:14px;font-weight:300;color:rgba(248,246,241,.62);line-height:1.7">초기 무료 상담 후 사업 규모와 요구사항에 맞춘 견적을 안내해 드립니다.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CONTACT CTA ===================== -->
+  <section id="contact" data-screen-label="Contact" style="background:#13213B;color:#F8F6F1;scroll-margin-top:74px">
+    <div style="max-width:1280px;margin:0 auto;padding:clamp(96px,14vh,180px) clamp(24px,5vw,72px)">
+      <div style="text-align:center;max-width:760px;margin:0 auto 72px">
+        <div style="width:56px;height:3px;background:#C8963E;margin:0 auto 30px"></div>
+        <h2 style="margin:0 0 24px;font-weight:800;font-size:clamp(34px,5.5vw,76px);line-height:1.05;letter-spacing:-.03em">지금, 무료 진단을<br>받아보세요</h2>
+        <p style="margin:0 0 44px;font-weight:300;font-size:clamp(16px,1.6vw,19px);line-height:1.75;color:rgba(248,246,241,.7)">30분 무료 브랜드 진단으로 현재 브랜드의 강점과 개선점을 파악해 드립니다. 부담 없이 연락 주세요.</p>
+        <a href="mailto:hello@mermventures.co.kr" style="display:inline-block;background:#C8963E;color:#13213B;font-weight:700;font-size:16px;padding:19px 44px" style-hover="background:#b3842f">무료 상담 신청하기</a>
+      </div>
+
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1px;background:rgba(248,246,241,.12);border:1px solid rgba(248,246,241,.12)">
+        <div style="background:#13213B;padding:34px 30px">
+          <p style="margin:0 0 12px;font-size:11px;font-weight:600;letter-spacing:.18em;color:#C8963E">EMAIL</p>
+          <p style="margin:0;font-size:16px;font-weight:500">hello@mermventures.co.kr</p>
+        </div>
+        <div style="background:#13213B;padding:34px 30px">
+          <p style="margin:0 0 12px;font-size:11px;font-weight:600;letter-spacing:.18em;color:#C8963E">PHONE</p>
+          <p style="margin:0;font-size:16px;font-weight:500">02-1234-5678</p>
+        </div>
+        <div style="background:#13213B;padding:34px 30px">
+          <p style="margin:0 0 12px;font-size:11px;font-weight:600;letter-spacing:.18em;color:#C8963E">ADDRESS</p>
+          <p style="margin:0;font-size:15px;font-weight:300;line-height:1.6;color:rgba(248,246,241,.82)">서울특별시 강남구 테헤란로 123<br>merm빌딩 4층</p>
+        </div>
+        <div style="background:#13213B;padding:34px 30px">
+          <p style="margin:0 0 12px;font-size:11px;font-weight:600;letter-spacing:.18em;color:#C8963E">HOURS</p>
+          <p style="margin:0;font-size:15px;font-weight:300;line-height:1.6;color:rgba(248,246,241,.82)">평일 09:00 – 18:00<br>주말·공휴일 휴무</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer style="background:#0F1A2F;color:rgba(248,246,241,.6)">
+    <div style="max-width:1280px;margin:0 auto;padding:56px clamp(24px,5vw,72px);display:flex;flex-wrap:wrap;gap:28px;align-items:center;justify-content:space-between">
+      <div>
+        <div style="margin-bottom:12px">
+          <img src="./uploads/logo_white.png" alt="merm VENTURES" style="height:160px;width:auto;display:block">
+        </div>
+        <p style="margin:0;font-size:13px;font-weight:300">브랜드를 설계합니다 · 중소기업·소상공인의 신뢰받는 브랜딩 파트너</p>
+      </div>
+      <div style="display:flex;gap:24px;font-size:13px">
+        <a href="https://instagram.com" style="color:rgba(248,246,241,.6)" style-hover="color:#C8963E">@merm_ventures</a>
+        <a href="#contact" style="color:rgba(248,246,241,.6)" style-hover="color:#C8963E">카카오톡 채널</a>
+      </div>
+    </div>
+    <div style="border-top:1px solid rgba(248,246,241,.08)">
+      <div style="max-width:1280px;margin:0 auto;padding:22px clamp(24px,5vw,72px);font-size:12px;font-weight:300;color:rgba(248,246,241,.38)">© 2024 merm벤처스. All rights reserved.</div>
+    </div>
+  </footer>
+
+</div>
+</x-dc>
+<script src="./chatbot.js"></script>
+</body>
+</html>
